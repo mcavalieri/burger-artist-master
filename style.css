@@ -20,6 +20,37 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
+
+/* Footer CSS */
+
+.site-info{
+	background: #000000;
+}
+
+.site-footer{
+	background: #000000;
+}
+
+
+
+/* Header CSS */
+
+header{
+	background: #4d4d4d;
+}
+
+menu{
+	background: #800000;
+
+}
+
+/* Comment Footer */
+
+footer{
+	background: orange;
+}
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -62,10 +93,7 @@ aside,
 details,
 figcaption,
 figure,
-footer,
-header,
 main,
-menu,
 nav,
 section,
 summary {
@@ -743,6 +771,7 @@ a:active {
 	content: "";
 	display: table;
 	table-layout: fixed;
+
 }
 
 .clear:after,
