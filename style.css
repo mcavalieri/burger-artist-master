@@ -23,9 +23,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /* Footer CSS */
 
-.site-info{
-	background: #000000;
-}
 
 .site-footer{
 	background: #000000;
@@ -81,14 +78,111 @@ footer{
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+
+body, html{ /* Formatting the body/html tags */ 
+
+	color:#444!important; 
+	background-size: cover; 
+	background-position: center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    	
 }
 
-body {
-	margin: 0;
+
+
+/* Grid layout for posts/menu items */
+
+.column-one{
+	width: 45%; 
+	float: left; 
+	margin-right: 10%; 	
+}
+
+.column-two{
+	margin-right: 0;
+
+}
+
+.clearfix{
+	clear: both; 
+}
+
+/* Content */
+
+#primary{
+	background: rgba(242, 242, 242, 0.8);
+	max-width: 70%;
+	margin: auto;
+	float: center;
+	border-color: #404040;
+	border-bottom: 2px solid #404040;
+	border-top: 2px solid #404040;
+	border-radius: 25px; 
+	border-style: solid;
+	
+	margin-top: 10px;
+	margin-bottom: 20px; 
+} 
+
+/* everything else below */ 
+
+.footer-menu{
+    	float: left;
+   }
+
+.container{
+	color: #444;
+	font-family: 'Raleway', Arial, sans-serif;
+	
+}
+
+h1.site-title{
+	line-height: 0px;
+	
+}
+
+.site-branding {
+	padding-top: 0px;
+}
+
+#mobile-menu {
+	display: none;
+	visibility: hidden;
+}
+
+
+
+.site-main, .entry-content, .entry-meta, .comments-area, .footer-widget-area{
+	margin: 2em;
+}
+
+.footer-menu ul{
+	list-style: none;
+}
+
+
+header {
+	background: #f2f2f2;
+}
+
+#footer-widgets{
+	max-width: 100%;
+	margin: auto;
+}
+
+#footer-widgets .widget{
+	float: none;
+	display: inline-block;
+}
+
+.site-info {
+    margin: auto;
+}
+
+.copyright{
+	float:right;
+	text-align: right;
 }
 
 article,
