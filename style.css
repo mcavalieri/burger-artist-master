@@ -158,9 +158,18 @@ h1.site-title{
 	visibility: hidden;
 }
 
+@media screen and (max-width: 750px){
+	.footer-widgets{
+		display: :block;
+		margin:auto;
+		padding: auto;	
+		float:left;
+		margin-right: 100px;
+	}
 
+}
 
-.site-main, .entry-content, .entry-meta, .comments-area, .footer-widget-area{
+.site-main, .entry-content, .entry-meta, .comments-area{
 	margin: 2em;
 }
 
@@ -172,7 +181,6 @@ h1.site-title{
 	display: inline-block;
     padding: 20px;
     margin: 30px;
-    margin-left: 110px;
     width: 80%;
     border-style: solid;
     border-radius: 25px;
@@ -911,10 +919,16 @@ a:active {
 .widget_calendar{
     float: right;
     width: 300px;
-    margin-right: 40px;
+    background: #FAFAFA;
+    border-style: solid;
+    border-color: #000000;
+    padding: 20px;
+    border-radius: 25px;
+    margin-right: 25px;
 }
 .widget_search{
 	float: left;
+	padding:10px;
 }
 /* Make sure select elements fit in widgets. */
 .widget select {
@@ -959,10 +973,14 @@ a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-#page{
-
+.column-one{
+	float:left;
+	width: 50%;
 }
-
+.column-two{
+	float: right;
+	width: 50%;
+}
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -987,7 +1005,7 @@ a:active {
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+.infinite-scroll.neverending  { /* Theme Footer (when set to scrolling) */
 	display: none;
 }
 
