@@ -891,10 +891,18 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
+.widget_calendar{
+    float: right;
+    width: 300px;
+    margin-right: 100px;
 }
-
+.widget_search{
+	float: left;
+    margin-left: 140px;
+}
+#footer-widgets{
+	background: white;
+}
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
