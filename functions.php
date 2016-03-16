@@ -6,7 +6,7 @@
  *
  * @package burger-artist-master
  */
-
+ 
 if ( ! function_exists( 'burger_artist_master_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -107,6 +107,17 @@ function burger_artist_master_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	/* Function for Footer Widget Menu */
+	register_sidebar( array(
+		'name'		=>__( 'Footer', 'burger-artist-master' ),
+		'id'		=> 'footer-widget-area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">', 
+		'after_widget'	=> '</aside>', 
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	));
+
+register_nav_menus(array('secondary' =>__('Footer Menu'),));
 }
 add_action( 'widgets_init', 'burger_artist_master_widgets_init' );
 
