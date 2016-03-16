@@ -173,13 +173,21 @@ h1.site-title{
 	margin: auto;
 }
 
-#footer-widgets .widget{
-	float: none;
+.footer-widgets{
 	display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.widget{
+	margin-left: 90px;
 }
 
 .site-info {
-    margin: auto;
+    margin: 300px;
+
 }
 
 .copyright{
@@ -697,14 +705,14 @@ a:active {
 
 .main-navigation ul {
 	background-color: #f2f2f2;
-	opacity: 0.8;
+	opacity: 0.85;
 	border-color: #444;
 	border-bottom: 2px solid #444;
 	border-top: 2px solid #444;
 	border-radius: 25px; 
 	border-style: solid;
 	list-style: none;
-	margin: 50px 0;
+	margin: 30px 0;
 	padding:0;
 	text-align: center;
 }
@@ -909,9 +917,6 @@ a:active {
 .widget_search{
 	float: left;
     margin-left: 140px;
-}
-#footer-widgets{
-	background: white;
 }
 /* Make sure select elements fit in widgets. */
 .widget select {
