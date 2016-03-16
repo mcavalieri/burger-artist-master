@@ -659,6 +659,7 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -690,26 +691,35 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
 	float: left;
 	width: 100%;
 }
 
 .main-navigation ul {
-	display: none;
+	background-color: #f2f2f2;
+	opacity: 0.8;
+	border-color: #444;
+	border-bottom: 2px solid #444;
+	border-top: 2px solid #444;
+	border-radius: 25px; 
+	border-style: solid;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	margin: 50px 0;
+	padding:0;
+	text-align: center;
 }
 
 .main-navigation li {
-	float: left;
-	position: relative;
+	display:inline-block;
+	padding:5px 10px;
 }
 
 .main-navigation a {
-	display: block;
-	text-decoration: none;
+
+	color: #444444;
+	font-size: 24px;
+	text-decoration: none; 
+	text-transform: uppercase;
 }
 
 .main-navigation ul ul {
@@ -765,7 +775,7 @@ a:active {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+
 }
 
 @media screen and (min-width: 37.5em) {
@@ -773,7 +783,7 @@ a:active {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: inline-block;
 	}
 }
 
