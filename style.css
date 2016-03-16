@@ -168,17 +168,15 @@ h1.site-title{
 	list-style: none;
 }
 
-#footer-widgets{
-	max-width: 100%;
-	margin: auto;
-}
-
 .footer-widgets{
 	display: inline-block;
-    padding: 10px;
+    padding: 20px;
     margin: 30px;
+    margin-left: 110px;
+    width: 80%;
     border-style: solid;
     border-radius: 25px;
+
 }
 
 .widget{
@@ -186,8 +184,9 @@ h1.site-title{
 }
 
 .site-info {
-    margin: 300px;
-
+	float: right;
+    margin-top: -30px;
+    padding: 13px;
 }
 
 .copyright{
@@ -912,11 +911,10 @@ a:active {
 .widget_calendar{
     float: right;
     width: 300px;
-    margin-right: 100px;
+    margin-right: 40px;
 }
 .widget_search{
 	float: left;
-    margin-left: 140px;
 }
 /* Make sure select elements fit in widgets. */
 .widget select {
