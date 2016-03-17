@@ -1048,6 +1048,10 @@ a:active {
 	width: 550px;
     display: inline-block;
 }
+h1.entry-title {
+    color: #f2f2f2;
+    font-family: 'Allura', cursive;
+}
 @media screen and (max-width: 750px){
 	.hentry{
 		margin: auto;
@@ -1072,6 +1076,7 @@ a:active {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	color:#FFF7F7;
 }
 
 .page-links {
