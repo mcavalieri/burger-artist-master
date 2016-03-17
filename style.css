@@ -438,6 +438,7 @@ p {
 .site-description{
 	font-family: 'Allura', cursive;
     font-size: 30px;
+    color: #FFEFD5;
 }
 
 dfn,
@@ -685,19 +686,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: ivory;
+	color: #f2f2f2;
 	text-decoration: none;
 }
 
 a:visited {
-	color: ivory;
+	color: #f2f2f2;
 	text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #f2f2f2;
 	text-decoration: none;
 }
 
