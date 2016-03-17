@@ -7,6 +7,8 @@
  * @package burger-artist-master
  */
  
+ add_image_size('menuPics', 400, 200, true);
+
 if ( ! function_exists( 'burger_artist_master_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
