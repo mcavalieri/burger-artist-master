@@ -13,10 +13,10 @@
 		<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				'<a href="' . the_permalink(); . '" title="' . the_title_attribute(); . '">' . the_post_thumbnail(); . '</a>';
+			} else { ?>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('menuPics'); ?></a>
 			}
-
+		<?php
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php burger_artist_master_posted_on(); ?>
