@@ -6,7 +6,7 @@
  *
  * @package burger-artist-master
  */
- 
+ require get_stylesheet_directory() .'/inc/options.php';
  add_image_size('menuPics', 400, 200, true);
 
 if ( ! function_exists( 'burger_artist_master_setup' ) ) :
