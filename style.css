@@ -27,11 +27,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* Footer CSS */
 
 .site-footer{
-	background: #000000;
+	background: #0d0d0d;
 }
 
 aside{
-	background: #purple;
+	background: #6600ff;
 }
 
 
@@ -55,11 +55,27 @@ menu{
 
 }
 
-/* Comment Footer */
-
-footer{
-	background: orange;
+/* Grid Menu CSS */ 
+#burger-menu{
+/* bg image source: https://s-media-cache-ak0.pinimg.com/736x/76/29/fe/7629fe0ee86c8865d35c56d9a316f9cf.jpg */ 
+	background-image: url("img/82.jpg"); 
+	background-repeat: no-repeat;
+	background-size:cover 
+	width: 30%; 
+	padding-top: 5px;
+    text-align: center;
+    border-color: #404040;
+    border-bottom: 2px solid #404040;
+    border-top: 2px solid #404040;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+    border-style: solid;
+	margin-left: auto; 
+	margin-right: auto;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -135,7 +151,7 @@ body, html{ /* Formatting the body/html tags */
 } 
 @media screen and (max-width: 750px){
 	#primary{
-		background: #800000;
+		background-color: #800000; 
 		max-width: 90%;
 		margin:auto;
 		border-color: rgba(12, 25, 44, 0.93);    
@@ -155,6 +171,7 @@ body, html{ /* Formatting the body/html tags */
 .container{
 	color: #444;
 	font-family: 'Raleway', Arial, sans-serif;
+	
 	
 }
 
@@ -206,10 +223,12 @@ body, html{ /* Formatting the body/html tags */
 }
 
 .footer-widgets{
-	display: inline-block;
 	color:#8B4513;
     padding: 20px;
-    margin: 30px;
+    margin: 0 auto;
+	margin-top: 10px; 
+	margin-bottom: 20px; 
+	display: table;
     width: 80%;
     border-style: solid;
     border-radius: 25px;
@@ -976,7 +995,9 @@ a:active {
 --------------------------------------------------------------*/
 
 #content{
-	background: #800000;
+		background-image: url("img/bg.jpg"); /* Source: https://c1.staticflickr.com/3/2654/3825654244_a6b77540f4_b.jpg */
+		background-color: #800000; 
+		background-size: cover; 
 }
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1023,7 +1044,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
-.blog .format-aside .entry-title,
+.blog .format-aside,
 .archive .format-aside .entry-title {
 	display: none;
 }
