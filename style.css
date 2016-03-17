@@ -55,6 +55,38 @@ menu{
 
 }
 
+/* Hamburger - Because we're all about that Angus. */ 
+
+.hamburger{
+		background: #FFFFFF;
+		width: 60px; 
+		height: 10px;
+		margin: 10px 0;
+		display: block;  
+	}
+	
+#menu-main-items{
+		display: none;
+	}
+	
+.toggled #menu-main-items{
+		display: block;
+	}
+	
+	
+.menu-toggle{
+		display: block; 
+		background: transparent; 
+		box-shadow: none; 
+	
+	}
+	
+.menu-txt{
+		display: none; 
+	}
+
+
+
 /* Grid Menu CSS */ 
 #burger-menu{
 /* bg image source: https://s-media-cache-ak0.pinimg.com/736x/76/29/fe/7629fe0ee86c8865d35c56d9a316f9cf.jpg */ 
