@@ -164,8 +164,12 @@ h1.site-title{
 }
 @media screen and (max-width: 750px){
 	h1.site-title{
-		font-size: 60px;
+		font-size: 40px;
 	}
+	site-description{
+		font-size: 20px;
+	}
+
 }
 
 .site-branding {
