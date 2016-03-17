@@ -984,6 +984,15 @@ a:active {
 	width: 550px;
     display: inline-block;
 }
+@media screen and (max-width: 750px){
+	.hentry{
+		margin: auto;
+    	margin-bottom: 20px;
+   		border-bottom: solid;
+    	width: 100%;
+    	display: inline-block;
+	}
+}
 
 .byline,
 .updated:not(.published) {
