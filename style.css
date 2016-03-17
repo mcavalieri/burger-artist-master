@@ -38,6 +38,7 @@ aside{
 header {
 	background-image: url("burger_artist_banner.jpg");
 	background-repeat: no-repeat;
+	background-size:cover; 
     text-align: center;
     border-color: #404040;
     border-bottom: 2px solid #404040;
@@ -108,8 +109,7 @@ body, html{ /* Formatting the body/html tags */
 }
 
 .column-two{
-	margin-right: 0;
-
+	float: right;
 }
 
 .clearfix{
@@ -148,7 +148,7 @@ body, html{ /* Formatting the body/html tags */
 h1.site-title{
     line-height: 0px;
     font-family: 'Yesteryear', cursive;
-    font-size: 50px;
+    font-size: 90px;
 }
 
 .site-branding {
@@ -685,26 +685,31 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: ivory;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: ivory;
+	text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
 	color: midnightblue;
+	text-decoration: none;
 }
 
 a:focus {
 	outline: thin dotted;
+	text-decoration: none;
 }
 
 a:hover,
 a:active {
 	outline: 0;
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
