@@ -962,6 +962,8 @@ a:active {
 
 .hentry {
 	margin: 0 0 1.5em;
+	width: 550px;
+    display: inline-block;
 }
 
 .byline,
