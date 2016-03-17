@@ -150,6 +150,11 @@ h1.site-title{
     font-family: 'Yesteryear', cursive;
     font-size: 90px;
 }
+@media screen and (max-width: 750px){
+	h1.site-title{
+		font-size: 60px;
+	}
+}
 
 .site-branding {
 	padding-top: 30px;
@@ -287,6 +292,8 @@ sub {
 
 img {
 	border: 0;
+    height: auto;
+    max-width: 100%;
 }
 
 svg:not(:root) {
@@ -961,7 +968,7 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 35px;
 	width: 550px;
     display: inline-block;
 }
