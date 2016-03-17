@@ -36,16 +36,16 @@ get_header(); ?>
 			?>
 		
 			<div class="column-one">
-				<?php the_post_thumbnail("menuPics");?> 
-				<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-				<?php the_excerpt(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail("menuPics");?> 
+				</a>
+				
 			</div>
 			
 			<?php elseif($counter == $grids): ?>
 			<div class="column-two">
-				<?php the_post_thumbnail("menuPics");?> 
-				<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-				<?php the_excerpt(); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail("menuPics");?> 
+				</a>
+				
 			</div>
 			
 			
@@ -60,11 +60,12 @@ get_header(); ?>
 			<?php endwhile; ?> 
 			<?php else : ?>
 
-			
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 			
 			<?php endif; 
 				wp_reset_postdata();
 			?>
+			
 			
 			
 		
