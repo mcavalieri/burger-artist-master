@@ -157,23 +157,25 @@ body, html{ /* Formatting the body/html tags */
 	
 }
 
-h1.site-title{
+.site-title{
     line-height: 0px;
     font-family: 'Yesteryear', cursive;
-    font-size: 90px;
+    font-size: 60px;
 }
+
 @media screen and (max-width: 750px){
-	h1.site-title{
+	.site-title{
 		font-size: 40px;
 	}
 	site-description{
 		font-size: 20px;
+
 	}
 
 }
 
 .site-branding {
-	padding-top: 30px;
+	margin:-10px;
 }
 
 #mobile-menu {
@@ -183,12 +185,14 @@ h1.site-title{
 
 @media screen and (max-width: 750px){
 	.footer-widgets{
-		display: :block;
+		display:block;
 		margin:auto;
-		padding: auto;	
 		float:left;
 		margin-right: 100px;
 	}
+	.widget_search {
+    float: none;
+}
 
 }
 
@@ -202,12 +206,12 @@ h1.site-title{
 
 .footer-widgets{
 	display: inline-block;
+	color:#8B4513;
     padding: 20px;
     margin: 30px;
     width: 80%;
     border-style: solid;
     border-radius: 25px;
-
 }
 
 .widget{
@@ -455,13 +459,11 @@ h6 {
 	clear: both;
 }
 
-p {
-	margin-bottom: 1.5em;
-}
 .site-description{
 	font-family: 'Allura', cursive;
     font-size: 30px;
     color: #FFEFD5;
+    margin-top: -29px;
 }
 
 dfn,
@@ -743,6 +745,7 @@ a:active {
 	clear: both;
 	float: left;
 	width: 100%;
+	margin-top: -30px;
 }
 
 .main-navigation ul {
@@ -953,7 +956,6 @@ a:active {
 .widget_calendar{
     float: right;
     width: 300px;
-    background: #FAFAFA;
     border-style: solid;
     border-color: #000000;
     padding: 20px;
