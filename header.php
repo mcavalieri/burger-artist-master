@@ -43,14 +43,7 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span><span class="menu-txt"><?php esc_html_e( 'Menu', 'burger-artist-master' ); ?></span></button>
-			<?php wp_nav_menu( array(
-				'theme_location'  => 'primary',
-				'container'       => 'div',
-				'container_id'    => 'menu-main',
-				'container_class' => 'menu',
-				'menu_id'         => 'menu-main-items',
-				'menu_class'      => 'menu-items',
-			) ); ?>						
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>					
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
