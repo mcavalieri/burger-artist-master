@@ -175,7 +175,7 @@ body, html{ /* Formatting the body/html tags */
 }
 
 .site-branding {
-	margin:-10px;
+	
 }
 
 #mobile-menu {
@@ -463,7 +463,6 @@ h6 {
 	font-family: 'Allura', cursive;
     font-size: 30px;
     color: #FFEFD5;
-    margin-top: -29px;
 }
 
 dfn,
