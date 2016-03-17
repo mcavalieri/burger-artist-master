@@ -132,6 +132,18 @@ body, html{ /* Formatting the body/html tags */
 	margin-top: 10px;
 	margin-bottom: 20px; 
 } 
+@media screen and (max-width: 750px){
+	#primary{
+		background: #800000;
+		max-width: 90%;
+		margin:auto;
+		border-color: rgba(12, 25, 44, 0.93);    
+		border-radius: 25px;
+    	border-style: solid;
+    	margin-top: 10px;
+    	margin-bottom: 20px;
+	}
+}
 
 /* everything else below */ 
 
