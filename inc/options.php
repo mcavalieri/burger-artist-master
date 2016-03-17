@@ -1,121 +1,66 @@
 <?php
-	
-function burger_artist_master_add_submenu() {
-		add_submenu_page( 'themes.php', 'The Burger Artist Theme Options', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
-	}
-add_action( 'admin_menu', 'burger_artist_master_add_submenu' );
-	
 
-function burger_artist_master_settings_init() { 
-	register_setting( 'theme_options', 'burger_artist_master_options_settings' );
-	
-	add_settings_section(
-		'burger_artist_master_options_page_section', 
-		'Customize Your WordPress Theme!', 
-		'burger_artist_master_options_page_section_callback', 
-		'theme_options'
-	);
-	
-	function burger_artist_master_options_page_section_callback() { 
-		echo 'Configure your WordPress theme with the options below';
-	}
+// Source: Course Slides & WP Codex 
 
-	add_settings_field( 
-		'burger_artist_master_text_field', 
-		'Custom Text', 
-		'burger_artist_master_text_field_render', 
-		'theme_options', 
-		'burger_artist_master_options_page_section' 
-	);
-	
-	add_settings_field( 
-		'burger_artist_master_checkbox_field', 
-		'Check your preference', 
-		'burger_artist_master_checkbox_field_render', 
-		'theme_options', 
-		'burger_artist_master_options_page_section'  
-	);
-
-	add_settings_field( 
-		'burger_artist_master_radio_field', 
-		'Choose an option', 
-		'burger_artist_master_radio_field_render', 
-		'theme_options', 
-		'burger_artist_master_options_page_section'  
-	);
-	
-	add_settings_field( 
-		'burger_artist_master_textarea_field', 
-		'Enter content in the textarea', 
-		'burger_artist_master_textarea_field_render', 
-		'theme_options', 
-		'burger_artist_master_options_page_section'  
-	);
-	
-	add_settings_field( 
-		'burger_artist_master_select_field', 
-		'Choose from the dropdown', 
-		'burger_artist_master_select_field_render', 
-		'theme_options', 
-		'burger_artist_master_options_page_section'  
-	);
-
-	function burger_artist_master_text_field_render() { 
-		$options = get_option( 'burger_artist_master_options_settings' );
-		?>
-		<input type="text" name="burger_artist_master_options_settings[burger_artist_master_text_field]" value="<?php if (isset($options['burger_artist_master_text_field'])) echo $options['burger_artist_master_text_field']; ?>" />
-		<?php
-	}
-	
-	function burger_artist_master_checkbox_field_render() { 
-		$options = get_option( 'burger_artist_master_options_settings' );
-	?>
-		<input type="checkbox" name="burger_artist_master_options_settings[burger_artist_master_checkbox_field]" <?php if (isset($options['burger_artist_master_checkbox_field'])) checked( 'on', ($options['burger_artist_master_checkbox_field']) ) ; ?> value="on" />
-		<label>Turn it On</label> 
-		<?php	
-	}
-	
-	function burger_artist_master_radio_field_render() { 
-		$options = get_option( 'burger_artist_master_options_settings' );
-		?>
-		<input type="radio" name="burger_artist_master_options_settings[burger_artist_master_radio_field]" <?php if (isset($options['burger_artist_master_radio_field'])) checked( $options['burger_artist_master_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="burger_artist_master_options_settings[burger_artist_master_radio_field]" <?php if (isset($options['burger_artist_master_radio_field'])) checked( $options['burger_artist_master_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="burger_artist_master_options_settings[burger_artist_master_radio_field]" <?php if (isset($options['burger_artist_master_radio_field'])) checked( $options['burger_artist_master_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
-		<?php
-	}
-	
-	function burger_artist_master_textarea_field_render() { 
-		$options = get_option( 'burger_artist_master_options_settings' );
-		?>
-		<textarea cols="40" rows="5" name="burger_artist_master_options_settings[burger_artist_master_textarea_field]"><?php if (isset($options['burger_artist_master_textarea_field'])) echo $options['burger_artist_master_textarea_field']; ?></textarea>
-		<?php
-	}
-
-	function burger_artist_master_select_field_render() { 
-		$options = get_option( 'burger_artist_master_options_settings' );
-		?>
-		<select name="burger_artist_master_options_settings[burger_artist_master_select_field]">
-			<option value="1" <?php if (isset($options['burger_artist_master_select_field'])) selected( $options['burger_artist_master_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['burger_artist_master_select_field'])) selected( $options['burger_artist_master_select_field'], 2 ); ?>>Option 2</option>
-		</select>
+function theme_settings_page(){
+ ?>
+	    <div class="wrap">
+	    <h1>Theme Options</h1>
+	    <form method="post" action="options.php">
+	        <?php
+	            settings_fields("section");
+	            do_settings_sections("theme-options");      
+	            submit_button(); 
+	        ?>          
+	    </form>
+		</div>
 	<?php
-	}
-	
-	function my_theme_options_page(){ 
-		?>
-		<form action="options.php" method="post">
-			<h2>The Burger Artist Customization Options</h2>
-			<?php
-			settings_fields( 'theme_options' );
-			do_settings_sections( 'theme_options' );
-			submit_button();
-			?>
-		</form>
-		<?php
-	}
-
+}
+function display_twitter_element()
+{
+	?>
+    	<input type="text" name="twitter_url" id="twitter_url" value="<?php echo get_option('twitter_url'); ?>" />
+    <?php
 }
 
-add_action( 'admin_init', 'burger_artist_master_settings_init' );
+function display_facebook_element()
+{
+	?>
+    	<input type="text" name="facebook_url" id="facebook_url" value="<?php echo get_option('facebook_url'); ?>" />
+    <?php
+}
 
-?>
+function display_yelp_element()
+{
+	?>
+    	<input type="text" name="yelp_url" id="yelp_url" value="<?php echo get_option('yelp_url'); ?>" />
+    <?php
+}
+
+function display_theme_panel_fields()
+{
+	add_settings_section("section", "Customize The Burger Artist Theme", null, "theme-options");
+	
+	add_settings_field("twitter_url", "Twitter URL:", "display_twitter_element", "theme-options", "section");
+    add_settings_field("facebook_url", "Facebook Page URL:", "display_facebook_element", "theme-options", "section");
+	add_settings_field("yelp_url", "Yelp Page URL:", "display_yelp_element", "theme-options", "section");
+
+    register_setting("section", "twitter_url");
+    register_setting("section", "facebook_url");
+	register_setting("section", "yelp_url");
+}
+
+add_action("admin_init", "display_theme_panel_fields");
+
+function add_theme_menu_item()
+{
+	add_menu_page("Theme Options", "Theme Options", "manage_options", "theme-options", "theme_settings_page", null, 99);
+}
+
+add_action("admin_menu", "add_theme_menu_item");
+
+
+
+
+
+?> 

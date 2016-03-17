@@ -6,8 +6,8 @@
  *
  * @package burger-artist-master
  */
- require get_stylesheet_directory() .'/inc/options.php';
- add_image_size('menuPics', 400, 200, true);
+ 
+add_image_size('menuPics', 400, 200, true);
 
 if ( ! function_exists( 'burger_artist_master_setup' ) ) :
 /**
@@ -165,3 +165,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/* Load options page */ 
+require get_template_directory() . '/inc/options.php';

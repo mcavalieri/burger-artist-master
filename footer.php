@@ -32,7 +32,19 @@
 					</a>
 				<span class="sep"> | </span>
 					<?php printf( 
-					esc_html__( 'Theme: %1$s by %2$s.', 'burger-artist-master' ), 'burger-artist-master', '<a href="http://google.com" rel="designer">Maurizio & ZiXin</a>' ); ?>
+					esc_html__( 'Theme: %1$s by %2$s.', 'burger-artist-master' ), 'burger-artist-master', '<a href="http://google.com" rel="designer">Maurizio & ZiXin</a>' ); 
+					$facebook_url = get_option('facebook_url');
+					?>
+						<a href="<?php echo $facebook_url; ?>"> - Facebook</a>
+					<?php
+					$twitter_url = get_option('twitter_url');
+					?>
+						<a href="<?php echo $twitter_url; ?>"> - Twitter</a>
+					<?php									
+					$yelp_url = get_option('yelp_url'); 
+					?>
+					<a href="<?php echo $yelp_url; ?>"> - Yelp</a>
+			
 				</div><!-- .site-info -->
 		</div>
 
