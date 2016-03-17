@@ -176,7 +176,7 @@ body, html{ /* Formatting the body/html tags */
 /* Content */
 
 #primary{
-	background: rgba(242, 242, 242, 0.8);
+	background: rgba(180, 180, 180, 0.7);
 	max-width: 70%;
 	margin: auto;
 	float: center;
