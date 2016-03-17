@@ -20,10 +20,11 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
+/* Import Google Font */ 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 /* Footer CSS */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 .site-footer{
 	background: #000000;
 }
@@ -109,7 +110,7 @@ body, html{ /* Formatting the body/html tags */
 }
 
 .column-two{
-	float: right;
+	margin-right: 0;
 }
 
 .clearfix{
@@ -128,7 +129,6 @@ body, html{ /* Formatting the body/html tags */
 	border-top: 2px solid #404040;
 	border-radius: 25px; 
 	border-style: solid;
-	
 	margin-top: 10px;
 	margin-bottom: 20px; 
 } 
@@ -816,8 +816,7 @@ a:active {
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+	margin: 2em;
 }
 
 .comment-navigation .nav-previous,
@@ -983,14 +982,6 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-.column-one{
-	float:left;
-	width: 50%;
-}
-.column-two{
-	float: right;
-	width: 50%;
 }
 /*--------------------------------------------------------------
 ## Asides
